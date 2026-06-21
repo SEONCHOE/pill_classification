@@ -34,6 +34,7 @@ __pycache__/
 *.dylib
 
 # ===== 데이터 / 산출물 (대용량) =====
+mv_data/
 datasets/
 raw_data/
 runs/
