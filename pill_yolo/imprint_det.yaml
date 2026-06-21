@@ -1,0 +1,31 @@
+# =============================================================
+# imprint_det.yaml — Ultralytics YOLO26 dataset config
+# 알약 각인 영역 탐지(detection)용
+# =============================================================
+#
+# 디렉터리 구조 예시 (YOLO 표준):
+#   datasets/imprint/
+#     images/train/*.jpg
+#     images/val/*.jpg
+#     images/test/*.jpg
+#     labels/train/*.txt   # 각 줄: <class> <x_center> <y_center> <w> <h>  (0~1 정규화)
+#     labels/val/*.txt
+#     labels/test/*.txt
+#
+# 라벨은 "알약 1장(앞면 또는 뒷면 crop)" 기준으로
+# 각인 영역(imprint)과 분할선(score_line)을 박스로 표기합니다.
+# (라벨이 아직 없으면 Gemini Flash 부트스트랩 → 수동 QA로 생성: 계획서 참고)
+
+path: ./datasets/imprint        # 데이터셋 루트 (상대/절대 경로)
+train: images/train
+val: images/val
+# test: images/test             # 아직 별도 test 세트 없음 (현재 train/val만 존재)
+
+# ---- 클래스 정의 ----
+# 권장: imprint + score_line 2-클래스.
+# (각인만 단일 클래스로 쓰려면 names를 {0: imprint}로 줄이고
+#  학습 스크립트에서 single_cls=True 설정)
+names:
+  0: imprint        # 각인 문자/마크 영역 (STR로 넘길 crop 대상)
+  1: score_line     # 분할선 (문자로 오인 방지를 위해 분리)
+  # 2: logo         # (선택) 제조사 로고/심볼이 많으면 활성화

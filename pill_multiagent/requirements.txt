@@ -1,0 +1,31 @@
+# 핵심 프레임워크
+langgraph>=0.2.0
+langchain>=0.2.0
+langchain-community>=0.2.0
+langchain-openai>=0.1.0
+
+# LLM / Vision
+anthropic>=0.30.0
+openai>=1.30.0
+
+# 이미지 처리
+tensorflow==2.11.0
+keras==2.11.0
+opencv-python>=4.7.0
+Pillow>=10.0.0
+
+# OCR (선택: 기존 tesseract 대신 EasyOCR 추가 가능)
+pytesseract>=0.3.10
+easyocr>=1.7.0
+
+# 벡터 DB
+faiss-cpu>=1.7.4
+chromadb>=0.4.0
+
+# UI
+streamlit>=1.35.0
+
+# 기타
+python-dotenv>=1.0.0
+numpy>=1.23.5
+pandas>=1.5.3

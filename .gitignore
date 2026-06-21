@@ -1,0 +1,80 @@
+# ===== 비밀/인증 (절대 올리지 말 것) =====
+.env
+*.env
+.env.*
+*.key
+*credentials*
+*token*
+
+# ===== 가상환경 / 캐시 =====
+.venv/
+.venv*/
+venv/
+__pycache__/
+*.pyc
+*.pyo
+.ipynb_checkpoints/
+.cache/
+.claude/
+
+# ===== 모델 가중치 / 체크포인트 (대용량) =====
+*.pt
+*.pth
+*.ckpt
+*.hdf5
+*.h5
+*.onnx
+*.tflite
+*.pb
+*.safetensors
+*.bin
+*.so
+*.so.*
+*.dll
+*.dylib
+
+# ===== 데이터 / 산출물 (대용량) =====
+datasets/
+raw_data/
+runs/
+outputs/
+full_out/
+**/page_renders/
+**/crops/
+**/page_renders*/
+pill_data/
+parseq_gt/
+Pill_Classification_Model/
+*.zip
+*.tar
+*.tar.gz
+*.lmdb
+*.mdb
+
+# ===== 이미지 / PDF (대용량 데이터) =====
+*.pdf
+*.jpg
+*.jpeg
+*.png
+*.bmp
+*.tif
+*.tiff
+
+# ===== 로그 / 대화기록 덤프 =====
+*.log
+*대화기록*.txt
+conversation-*.txt
+*errorpng*.txt
+done_pages.txt
+
+# ===== 윈도우/zone identifier 부산물 =====
+*:Zone.Identifier
+*Zone.Identifier
+"새 폴더*/"
+
+# ===== 대용량 결과 CSV(이미지 경로 매핑류; 코드 아님) =====
+# 필요하면 개별적으로 git add -f 로 강제 추가
+korean_pills_clean.csv
+full_clip_scores.csv
+clip_scores*.csv
+extracted.csv

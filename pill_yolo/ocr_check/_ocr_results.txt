@@ -1,0 +1,4 @@
+back_00025-1520-31_NLMIMAGE10_5B39ADCD.jpg_0	det_conf=0.15	ocr=''
+back_00025-1520-31_NLMIMAGE10_5B39ADCD.jpg_1	det_conf=0.11	ocr=''
+back_00093-8055-14_NLMIMAGE10_C53862D3.jpg_0	det_conf=0.40	ocr='7S8'
+back_41616-0758-81_NLMIMAGE10_071283A4.jpg_0	det_conf=0.16	ocr='758'

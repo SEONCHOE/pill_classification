@@ -1,0 +1,16 @@
+# YOLO 학습
+ultralytics>=8.3.0          # YOLO26 포함 (최신 버전 필요)
+
+# 라벨 부트스트랩 (Stage 0)
+google-genai>=2.0.0         # Gemini 2.5 Flash bbox 생성
+python-dotenv>=1.0.0
+
+# OCR (Stage 3)
+easyocr>=1.7.0              # 한글+영숫자 STR
+pillow>=10.0.0
+opencv-python>=4.7.0
+
+# 유틸
+numpy>=1.23.5
+pandas>=1.5.3
+tqdm>=4.65.0
